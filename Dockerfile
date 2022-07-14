@@ -43,7 +43,7 @@ RUN chmod +x /docker-install-rust.sh ; \
 # RUN git clone https://github.com/pola-rs/polars.git /polars
 
 # RUN echo "Installing polars from source..." && \
-#         cd /polars/py-polars && maturin build --rustc-extra-args="-C target-cpu=native" --release && \
+#         cd /polars/py-polars && maturin develop --rustc-extra-args="-C target-cpu=native" --release && \
 #         pip3 install /polars/py-polars/target/wheels/*manylinux*.whl ;
 # RUN rm -rf /polars
 
